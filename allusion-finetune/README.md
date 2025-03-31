@@ -18,6 +18,7 @@ python model/train.py --config config.yaml
 
 ## 架構
 
+```
 /allusion_finetune/
 ├── data/
 │   ├── raw/                # 原始語料（如古文語料、典故表）
@@ -43,3 +44,4 @@ python model/train.py --config config.yaml
 ├── requirements.txt        # 環境套件需求
 ├── README.md               # 子專案說明（簡述目標、語料來源、方法）
 └── config.yaml             # 統一設定（模型路徑、訓練參數等）
+```
