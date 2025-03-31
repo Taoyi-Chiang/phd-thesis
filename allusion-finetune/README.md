@@ -5,7 +5,7 @@
 
 ## 主要內容
 - **資料處理**：整理古文語料、停用詞表、自訂 Token 詞庫，以及典故對照資料的預處理與格式轉換（例如 JSONL）。
-- **模型微調**：基於 Hugging Face 的 `transformers` 套件，對 `bert-ancient-chinese` 進行續訓練與任務微調。
+- **模型微調**：基於`Hugging Face`的 `transformers` 套件，對 `bert-ancient-chinese` 進行續訓練與任務微調。
 - **評估與輸出**：提供訓練、評估腳本與預測 demo，方便產出論文所需圖表與數據。
 
 ## 目錄結構
