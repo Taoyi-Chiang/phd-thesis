@@ -14,3 +14,32 @@
 ## 訓練指令
 ```bash
 python model/train.py --config config.yaml
+```
+
+## 架構
+
+/allusion_finetune/
+├── data/
+│   ├── raw/                # 原始語料（如古文語料、典故表）
+│   ├── processed/          # 處理後語料（切詞、標註等）
+│   └── stopwords.txt       # 停用詞表
+│
+├── model/
+│   ├── config.json         # 模型與 tokenizer 設定
+│   ├── train.py            # 微調主程式
+│   ├── evaluate.py         # 評估腳本
+│   ├── predict.py          # 預測腳本（未來 demo 可用）
+│   └── tokenizer.py        # 自訂 tokenizer 加入典故詞
+│
+├── outputs/
+│   ├── checkpoints/        # 微調後模型儲存點
+│   └── logs/               # 訓練過程日誌
+│
+├── utils/
+│   ├── preprocessing.py    # 資料清理與格式轉換
+│   ├── dataset.py          # 定義 Dataset 類別
+│   └── metrics.py          # 精準率/召回率等評估指標
+│
+├── requirements.txt        # 環境套件需求
+├── README.md               # 子專案說明（簡述目標、語料來源、方法）
+└── config.yaml             # 統一設定（模型路徑、訓練參數等）
