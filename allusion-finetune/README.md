@@ -26,7 +26,7 @@
 │   └── tokenizer.py        # 自訂 tokenizer 加入典故詞
 │
 ├── outputs/
-│   ├── checkpoints/        # 微調後模型儲存點
+│   ├── checkpoint/        # 微調後模型儲存點
 │   └── logs/               # 訓練過程日誌
 │
 ├── utils/
