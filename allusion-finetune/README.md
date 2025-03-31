@@ -25,7 +25,7 @@
 │   ├── predict.py          # 預測腳本（未來 demo 可用）
 │   └── tokenizer.py        # 自訂 tokenizer 加入典故詞
 │
-├── outputs/
+├── notes/
 │   ├── checkpoint/        # 微調後模型儲存點
 │   └── logs/               # 訓練過程日誌
 │
