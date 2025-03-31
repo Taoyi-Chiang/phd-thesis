@@ -1,1 +1,14 @@
-
+# config.yaml
+model_name: "bert-ancient-chinese"    # 預訓練模型名稱或路徑
+num_labels: 2                         # 分類任務標籤數，這裡假設為二分類（含典故 / 不含典故）
+train_file: "data/raw/train.json"     # 訓練資料（JSON 格式，每筆至少含 "text" 與 "label" 欄位）
+eval_file: "data/raw/validation.json" # 驗證資料
+output_dir: "outputs/checkpoints"     # 模型與 checkpoint 儲存目錄
+max_length: 128                       # 句子最大長度
+num_train_epochs: 3                   # 訓練 epoch 數
+batch_size: 16                        # 每個設備的 batch size
+eval_steps: 500                       # 每隔多少步驟進行驗證
+save_steps: 500                       # 每隔多少步驟儲存模型
+logging_steps: 100                    # 訓練過程記錄頻率
+learning_rate: 5e-5                   # 初始學習率
+weight_decay: 0.01                    # L2 正則化係數
