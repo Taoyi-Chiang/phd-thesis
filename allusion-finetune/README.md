@@ -12,31 +12,31 @@
 
 ```
 /allusion_finetune/
-├── data/
-│   ├── raw/                # 原始語料（如古文語料、典故表）
-│   │   ├── ancient_texts.txt    # 古文原始語料（示例檔案）
-│   │   └── allusions.csv        # 典故對照資料（示例檔案）
-│   ├── processed/          # 處理後語料（切詞、標註等）
-│   └── stopwords.txt       # 停用詞表
+├── data/                      # 語料數據
+│   ├── raw/                   # 原始語料（例如古文、典故表）
+│   │   ├── ancient_texts.txt  # 古文原始語料（中唐五大家律賦）
+│   │   └── allusions.csv      # 典故對照資料（文選李善注）
+│   ├── processed/             # 處理後的語料（切詞、標註後的數據）
+│   └── stopwords.txt          # 停用詞表
 │
-├── model/
-│   ├── train.py            # 微調主程式
-│   ├── evaluate.py         # 評估腳本
-│   ├── predict.py          # 預測腳本（未來 demo 可用）
-│   └── tokenizer.py        # 自訂 tokenizer 加入典故詞
+├── model/                     # 模型與訓練相關程式
+│   ├── train.py               # 微調主程式
+│   ├── evaluate.py            # 評估腳本
+│   ├── predict.py             # 預測腳本（demo用）
+│   └── tokenizer.py           # 自訂 tokenizer，加入典故詞
 │
-├── notes/
-│   ├── checkpoint/        # 微調後模型儲存點
-│   └── logs/               # 訓練過程日誌
+├── notes/                     # 訓練過程產出的中間文件
+│   ├── checkpoint/            # 微調後模型儲存點
+│   └── logs/                  # 訓練過程日誌
 │
-├── utils/
-│   ├── preprocessing.py    # 資料清理與格式轉換
-│   ├── dataset.py          # 定義 Dataset 類別
-│   └── metrics.py          # 精準率/召回率等評估指標
+├── utils/                     # 工具與輔助函式庫
+│   ├── preprocessing.py       # 資料清理與格式轉換
+│   ├── dataset.py             # 定義 Dataset 類別
+│   └── metrics.py             # 精準率、召回率等評估指標
 │
-├── requirements.txt        # 環境套件需求
-├── README.md               # 子專案說明（簡述目標、語料來源、方法）
-└── config.yaml             # 統一設定（模型路徑、訓練參數等）
+├── requirements.txt           # 環境套件需求
+├── README.md                  # 專案說明（目標、語料來源、方法等）
+└── config.yaml                # 統一設定（模型路徑、訓練參數等）
 ```
 
 
