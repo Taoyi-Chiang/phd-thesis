@@ -1,3 +1,4 @@
+```
 allusion_retrieval/
 ├── data/
 │   ├── raw/
@@ -17,3 +18,4 @@ allusion_retrieval/
 ├── config.yaml
 ├── requirements.txt
 └── README.md
+```
